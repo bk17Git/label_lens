@@ -8,7 +8,7 @@
 # IMPORTANT: Replace the 'to' URL with your actual Render service URL after deploying the backend!
 [[redirects]]
   from = "/api/*"
-  to = "https://labellens-api-placeholder.onrender.com/api/:splat"
+  to = "https://label-lens-g0jk.onrender.com/"
   status = 200
   force = true
 
