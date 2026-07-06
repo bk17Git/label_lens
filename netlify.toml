@@ -1,14 +1,14 @@
 # Netlify Configuration File for LabelLens
 
 [build]
-  command = "npm run build --prefix client"
+  command = "npm install --prefix client && npm run build --prefix client"
   publish = "client/dist"
 
 # Proxy frontend /api requests to the hosted Express backend.
 # IMPORTANT: Replace the 'to' URL with your actual Render service URL after deploying the backend!
 [[redirects]]
   from = "/api/*"
-  to = "https://label-lens-g0jk.onrender.com/"
+  to = "https://label-lens-g0jk.onrender.com/"`
   status = 200
   force = true
 
