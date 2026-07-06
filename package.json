@@ -1,0 +1,15 @@
+{
+  "name": "labellens-monorepo",
+  "version": "1.0.0",
+  "description": "LabelLens - Food & Product Label Decoder",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently --kill-others \"npm run dev --prefix client\" \"node server/index.js\"",
+    "start": "node server/index.js",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
